@@ -1,0 +1,45 @@
+div.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+
+    /* specifies width for the transition */
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+div {
+    background-color: orange;
+    transition: background-color 1s linear;
+}
+
+div:hover {
+    background-color: red;
+}
+
+/* styles while hovering element*/
+.box:hover {
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  a {
+    flex: 1;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+  
+  a:hover,
+  a:focus {
+    background-color: #fff;
+    color: #333;
+  }

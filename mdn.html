@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mdn.css">
+</head>
+<body>
+    <p>Click anywhere to move the ball</p>
+<div id="foo" class="ball"></div>
+
+<script>
+  // Make the ball move to a certain position:
+  const f = document.getElementById("foo");
+  document.addEventListener(
+    "click",
+    (ev) => {
+      f.style.transform = `translateY(${ev.clientY - 25}px)`;
+      f.style.transform += `translateX(${ev.clientX - 25}px)`;
+    },
+    false,
+  );
+</script>
+<nav>
+    <a href="transition1.html">Trasitions page</a>
+    <a href="programmes.html">Programmes page</a>
+    <a href="mdn.html">mdn page</a>
+    <a href="index.html">Home 🏠︎</a>
+    <a href="#">Links</a>
+  </nav>
+</body>
+</html>
+
